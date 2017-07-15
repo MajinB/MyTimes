@@ -8,6 +8,7 @@ body {
 
 .header {
   border-bottom: 1px solid green;
+  background-color: white;
   display: flex;
   align-items: center;
   position: fixed;
@@ -50,6 +51,58 @@ a {
   color: black;
 }
 
-/* Container */
+/* Main Content Container */
+
+.content {
+  border: 1px solid red;
+  padding-top: 116px;
+  width: 1232px;
+  margin: 0 auto 78px auto;
+  display: flex;
+}
+
+.content div {
+  border: 1px solid black;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
+.large {
+  width: 630px;
+}
+
+.medium {
+  width: 300px;
+}
+
+.small {
+  width: 240px;
+}
+
+.image-content {
+  height: 300px;
+  margin-top: 15px;
+  font-family: Georgia, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.lead-story .image-content {
+  background-image: url(./sources/img-story-main.png);
+  width: 630px;
+  font-size: 40px;
+  margin-top: 0px;
+  text-align: left;
+}
+
+.fall-cancelled.image-content {
+  background-image: url(./sources/img-story-2.png);
+}
 
 /* Footer */
