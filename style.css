@@ -1,10 +1,11 @@
 /* Universal Styles */
 
 body {
-
+  margin: 0;
+  padding: 0;
 }
 
-/* Header */
+/* Header Container */
 
 .header {
   border-bottom: 1px solid green;
@@ -21,7 +22,6 @@ body {
 }
 
 .logo {
-  border: 1px solid blue;
   padding-left: 30px;
   display: flex;
   flex-grow: 1;
@@ -54,7 +54,6 @@ a {
 /* Main Content Container */
 
 .content {
-  border: 1px solid red;
   padding-top: 116px;
   width: 1232px;
   margin: 0 auto 78px auto;
@@ -62,7 +61,7 @@ a {
 }
 
 .content div {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 .column {
@@ -83,6 +82,38 @@ a {
   width: 240px;
 }
 
+.stories {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+.stories .text-content {
+  height: 250px;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.story-2 {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+}
+
+.story, .story-2, .lead-story{
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.narrative {
+  margin-top: 16px;
+}
+
 .image-content {
   height: 300px;
   margin-top: 15px;
@@ -91,6 +122,28 @@ a {
   font-size: 30px;
   color: white;
   text-align: center;
+}
+
+img.cookie {
+  height: 240px;
+  width: 240px;
+}
+
+.news-bites h3 {
+  margin-bottom: 41px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.news-bites .bite {
+  display: block;
+  border-bottom: 1px solid black;
+  padding: 11px 20px;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
 }
 
 .lead-story .image-content {
@@ -105,4 +158,40 @@ a {
   background-image: url(./sources/img-story-2.png);
 }
 
+.pop-culture.image-content {
+  background-image: url(./sources/img-story-3.png);
+}
+
+.cat-ceo.image-content {
+  background-image: url(./sources/img-story-1.png);
+}
+
 /* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 325px;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+footer .title {
+  display: inline-block;
+  padding-right: 25px;
+  border-right: 2px solid white;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+footer nav {
+  display: inline-block;
+  padding-left: 25px;
+}
